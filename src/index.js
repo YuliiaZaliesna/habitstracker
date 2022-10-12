@@ -5,7 +5,8 @@ import App from './App';
 import Homepage from './pages/Homepage/Homepage';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import './pages/Homepage/components/Login/LoginStyle.scss';
+import FAQ from "./pages/FAQ/FAQ";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +14,7 @@ root.render(
         <Routes>
             <Route path="/" element={<App />}/>
             <Route path="/home" element={<Homepage />}/>
+            <Route path="/questions" element={<FAQ />}/>
         </Routes>
     </BrowserRouter>
 );
