@@ -6,7 +6,7 @@ import './FaqStyle.scss';
 function FAQ(){
     return (
         <div className={"faqpage"}>
-            <Header pageType={PageTypes.FAQ}/>
+            <Header pageType={PageTypes.FAQ} />
             <Article />
         </div>
     );
