@@ -3,7 +3,7 @@ import './HederStyle.scss';
 import star from './star.png';
 
 function Header(props){
-    const { pageType } = props; // => const pageType = props.pageType
+    const { pageType } = props;
     let level = 1;
     let points = 0;
     if (pageType == PageTypes.ACCOUNT){

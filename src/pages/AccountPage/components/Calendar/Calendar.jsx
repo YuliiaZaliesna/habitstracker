@@ -1,6 +1,4 @@
 import './CalendarStyle.scss';
-import empty from "./empty.png";
-import yes from "./yes.png";
 import Image from "./Image";
 
 function Calendar(){
@@ -20,13 +18,13 @@ function Calendar(){
             <h1>Hej, {name}</h1>
             <p>Dzisiaj do zrobienia jeszcze masz:</p>
             <div className={"habits"}>
-                <div className={"singlehabit"}>
+                <div className={"singleHabit"}>
                     <p>Czytanie</p>
                     <div className={"days"}>
                     {addDays()}
                     </div>
                 </div>
-                <div className={"singlehabit"}>
+                <div className={"singleHabit"}>
                     <p>Sport</p>
                     <div className={"days"}>
                         {addDays()}

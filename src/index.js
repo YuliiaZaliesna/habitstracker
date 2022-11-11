@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import FAQ from "./pages/FAQ/FAQ";
 import AccountPage from './pages/AccountPage/AccountPage';
+import AddNewHabitPage from "./pages/AddNewHabitPage/AddNewHabitPage";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,6 +18,7 @@ root.render(
             <Route path="/home" element={<Homepage />}/>
             <Route path="/questions" element={<FAQ />}/>
             <Route path="/account" element={<AccountPage />}/>
+            <Route path="/add_new_habit" element={<AddNewHabitPage />}/>
         </Routes>
     </BrowserRouter>
 );

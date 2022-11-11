@@ -12,46 +12,36 @@ body, html, #app{
   align-items: center;
   flex-direction: column;
   align-content: center;
-}
 
-h1{
-  font-family: ClearSansThin;
-  color: #FFFFFF;
-  font-size: 64px;
-  text-shadow: 3px 3px 6px #d2cfcf;
-}
-
-@font-face {
-  font-family: ClearSansThin;
-  src: url(clearsans-thin.ttf);
-}
-
-@font-face {
-  font-family: Montserrat;
-  src: url(Montserrat-VariableFont_wght.ttf);
-}
-
-.articles{
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: stretch;
-  margin-left: 5px;
-  margin-right: 5px;
-  h3{
-    color: #858585;
-    font-size: 48px;
+  h1{
     font-family: ClearSansThin;
-    font-weight: lighter;
-    margin: 3px;
+    color: #FFFFFF;
+    font-size: 64px;
+    text-shadow: 3px 3px 6px #d2cfcf;
   }
 
-  p{
-    font-family: Montserrat;
-    font-size: 25px;
-    color: #C4C4C4;
-    margin-top: 3px;
-    margin-left: 35px;
+  .articles{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    margin-left: 5px;
+    margin-right: 5px;
+    h3{
+      color: #858585;
+      font-size: 48px;
+      font-family: ClearSansThin;
+      font-weight: lighter;
+      margin: 3px;
+    }
+
+    p{
+      font-family: Montserrat;
+      font-size: 25px;
+      color: #C4C4C4;
+      margin-top: 3px;
+      margin-left: 35px;
+    }
   }
 }

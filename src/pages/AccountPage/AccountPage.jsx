@@ -5,7 +5,7 @@ import './AccStyle.scss';
 
 function AccountPage(){
     return (
-        <div className={"accpage"}>
+        <div className={"accPage"}>
             <Header pageType={PageTypes.ACCOUNT} />
             <Calendar />
         </div>
