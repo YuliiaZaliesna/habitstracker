@@ -1,0 +1,123 @@
+body, html, #app{
+  height: 100%;
+}
+
+.addNew {
+  width: 100%;
+  height: 90%;
+  background-color: #FFE5EA;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  align-content: space-around;
+
+
+  h1 {
+    font-family: ClearSansThin;
+    color: #FFFFFF;
+    font-size: 64px;
+    text-shadow: 3px 3px 6px #d2cfcf;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-family: Montserrat;
+    font-size: 25px;
+    color: #C4C4C4;
+    margin: 5px;
+  }
+
+  .forms {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+
+    .addForm {
+      width: 420px;
+      height: 470px;
+      background-color: #C4C4C4;
+      margin: 20px;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .selectList{
+        width: 280px;
+        height: 40px;
+        overflow: hidden;
+        border: none;
+        position: relative;
+        cursor: pointer;
+        background: #FFFFFF;
+        align-items: center;
+        border-radius: 10px;
+        select {
+          width: 300px;
+          border: none;
+          height: 100%;
+          cursor: pointer;
+          text-align: center;
+          font-family: Montserrat;
+          font-size: 25px;
+          color: #C4C4C4;
+          letter-spacing: 3px;
+        }
+      }
+
+      .selectList:after{
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid #ffccd5;
+        position: absolute;
+        top: 40%;
+        right: 7px;
+        content: "";
+      }
+
+      p {
+        font-family: Montserrat;
+        font-size: 25px;
+        color: #FFFFFF;
+        margin-top: 25px;
+        letter-spacing: 3px;
+      }
+
+      input{
+        width: 70px;
+        height: 50px;
+        background: none;
+        border: 2px solid #ffccd5;
+        font-family: Montserrat;
+        font-size: 20px;
+        color: #FFFFFF;
+        margin-top: 10px;
+      }
+
+      .smallText {
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: 25px;
+        font-family: Montserrat;
+        font-size: 20px;
+        color: #FFFFFF;
+        letter-spacing: 3px;
+        text-align: center;
+      }
+
+      .plus{
+        height: 80px;
+        width: 80px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
