@@ -14,11 +14,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={<App />}/>
-            <Route path="/home" element={<Homepage />}/>
-            <Route path="/questions" element={<FAQ />}/>
-            <Route path="/account" element={<AccountPage />}/>
-            <Route path="/add_new_habit" element={<AddNewHabitPage />}/>
+            <Route path="/" element={<App/>}/>
+            <Route path="/home" element={<Homepage/>}/>
+            <Route path="/questions" element={<FAQ/>}/>
+            <Route path="/account" element={<AccountPage/>}/>
+            <Route path="/add_new_habit" element={<AddNewHabitPage/>}/>
         </Routes>
     </BrowserRouter>
 );

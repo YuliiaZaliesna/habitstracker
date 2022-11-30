@@ -1,8 +1,30 @@
 import './CalendarStyle.scss';
 import Image from "./Image";
+import {useEffect, useState} from "react";
 
 function Calendar(){
-    let name = "imię";
+
+    const [ userData, setUserData] = useState("Imię");
+    useEffect(()=>{
+        //Call to BE, get user data
+        const data = {
+            action:{
+                    type: "userInfo"
+                }
+        };
+        fetch("http://localhost/roboczy/diplomBE/endpoints.php", {
+            method: "POST",
+            body: JSON.stringify(data),
+            credentials: 'include'
+        })
+            .then(res => res.json())
+            .then((res) => {
+                setUserData(res["loginn"]);
+            });
+        //Call to BE, get Habist
+        //
+    });
+
     let amount = 21;
 
     const addDays = () => {
@@ -15,7 +37,7 @@ function Calendar(){
 
     return(
         <div className={"containerCal"}>
-            <h1>Hej, {name}</h1>
+            <h1>Hej, {userData}</h1>
             <p>Dzisiaj do zrobienia jeszcze masz:</p>
             <div className={"habits"}>
                 <div className={"singleHabit"}>

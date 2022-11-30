@@ -1,11 +1,29 @@
 import PageTypes from "../helpers/PageTypes";
 import './HederStyle.scss';
 import star from './star.png';
+import {useEffect, useState} from "react";
 
 function Header(props){
     const { pageType } = props;
-    let level = 1;
-    let points = 0;
+    const [ points, setPoints] = useState("0");
+    const [ level, setLevel] = useState("1");
+    useEffect(()=> {
+        const data = {
+            action: {
+                type: "userInfo"
+            }
+        };
+        fetch("http://localhost/roboczy/diplomBE/endpoints.php", {
+            method: "POST",
+            body: JSON.stringify(data),
+            credentials: 'include'
+        })
+            .then(res => res.json())
+            .then((res) => {
+                setPoints(res["points"]);
+                setLevel(res["poziom"]);
+            });
+    });
     if (pageType == PageTypes.ACCOUNT){
         return (
             <div className = "headers">
