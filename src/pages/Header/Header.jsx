@@ -4,7 +4,7 @@ import star from './star.png';
 import {useEffect, useState} from "react";
 
 function Header(props){
-    const { pageType } = props;
+    const { pageType, reloadHeader = 0 } = props;
     const [ points, setPoints] = useState("0");
     const [ level, setLevel] = useState("1");
     useEffect(()=> {
