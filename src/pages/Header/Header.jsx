@@ -23,7 +23,7 @@ function Header(props){
                 setPoints(res["points"]);
                 setLevel(res["poziom"]);
             });
-    });
+    }, [reloadHeader]);
     if (pageType == PageTypes.ACCOUNT){
         return (
             <div className = "headers">
